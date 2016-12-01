@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     public static class MyClass{
 
         public static String  user;
+        public static String rep_name;
 
     }
 
@@ -58,8 +59,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         button.setOnClickListener(new View.OnClickListener() {
-
-
             @Override
             public void onClick(View v) {
 
@@ -93,17 +92,18 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
             }
-        });}
+        });
 
+    button2.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+            startActivity(intent);
+        } });
 
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.button2:
-                Intent intent = new Intent(this, Main2Activity.class);
-                startActivity(intent);
-                break;
-        }
     }
+
+
 
 
 }

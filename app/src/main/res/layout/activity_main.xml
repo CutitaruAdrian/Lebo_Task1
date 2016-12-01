@@ -46,7 +46,8 @@
         android:id="@+id/button2"
         android:layout_below="@+id/textView"
         android:layout_alignRight="@+id/editText"
-        android:layout_alignEnd="@+id/editText" />
+        android:layout_alignEnd="@+id/editText"
+        android:onClick="onClick(MainActivity)" />
 
     <Button
         android:text="Search"
